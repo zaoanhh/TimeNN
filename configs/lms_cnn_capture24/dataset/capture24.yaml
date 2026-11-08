@@ -1,0 +1,46 @@
+# Capture24 dataset configuration
+
+# Data directory
+datadir: "/path/to/capture24/prepared_data/"
+
+# Label configuration
+label_method: "WillettsSpecific2018"
+labels:
+  WillettsSpecific2018:
+    - "bicycling"
+    - "household-chores"
+    - "manual-work"
+    - "mixed-activity"
+    - "sitting"
+    - "sleep"
+    - "sports"
+    - "standing"
+    - "vehicle"
+    - "walking"
+
+# Dataset parameters
+val_size: 20
+seq_length: 1
+train_radio: 1.0
+
+# Augmentation configuration (optional)
+augment:
+  jitter:
+    sigma: 0.01
+    prob: 0.1
+  shift:
+    window: 10
+    prob: 0.1
+  twarp:
+    sigma: 0.1
+    knots: 4
+    prob: 0.1
+  mwarp:
+    sigma: 0.05
+    knots: 4
+    prob: 0.0
+
+# DataLoader parameters
+dataloader:
+  batch_size: 64
+  drop_last: true

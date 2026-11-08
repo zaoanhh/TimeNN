@@ -1,0 +1,9 @@
+# @package _global_
+defaults:
+  - _base
+  - /dataset: capture24
+  - /model: lms_cnn_capture24
+  - /train: default
+  - _self_
+
+experiment_name: "lms_cnn_capture24"

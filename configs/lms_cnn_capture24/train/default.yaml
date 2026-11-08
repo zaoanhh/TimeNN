@@ -1,0 +1,10 @@
+epochs: 200
+lr: 0.001
+weight_decay: 0.003
+num_workers: 8
+early_stop_patience: 20
+eval_chunk_size: 16
+coverage_warmup_epochs: 30
+
+# Larger learning rate for the learnable filter bank.
+filter_bank_lr_factor: 10.0

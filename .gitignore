@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Training artefacts
+runs/
+outputs/
+multirun/
+*.pth
+*.pt
+
+# Local datasets
+data/raw/
+data/*/
+!data/results/
+
+# OS
+.DS_Store
