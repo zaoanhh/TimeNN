@@ -26,6 +26,9 @@ dependencies = [
     "tqdm==4.67.1",
 ]
 
+[project.urls]
+Repository = "https://github.com/zaoanhh/TimeNN"
+
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"

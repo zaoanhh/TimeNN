@@ -37,8 +37,8 @@ stability guarantee against nonlinear temporal distortion.
 ## Installation
 
 ```bash
-git clone <repository-url>
-cd Time-NN
+git clone https://github.com/zaoanhh/TimeNN.git
+cd TimeNN
 uv sync
 uv run python scripts/check_install.py
 ```
